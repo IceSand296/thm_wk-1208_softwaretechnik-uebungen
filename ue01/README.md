@@ -6,8 +6,8 @@ eigenen Rechner bis in dieses Repository. Die Anleitung steht im
 
 ## Was Sie einreichen
 
-Ihren **Steckbrief** als Datei `steckbriefe/<kürzel>.md`, eingereicht als
-Pull Request vom Branch `steckbrief-<kürzel>`.
+Einzureichen ist Ihr Steckbrief als Datei `steckbriefe/<kürzel>.md`, und
+zwar als Pull Request vom Branch `steckbrief-<kürzel>`.
 
 1. Kopieren Sie `steckbriefe/_vorlage.md` nach `steckbriefe/<kürzel>.md` und
    ersetzen Sie in der Überschrift `<kürzel>` durch Ihr Kürzel. Die Vorlage
