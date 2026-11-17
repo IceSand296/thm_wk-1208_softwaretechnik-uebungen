@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farbprobe – Corporate Design der THM</title>
+  <style>
+    :root {
+      --thm-gruen: #80BA24;
+      --thm-grau: #4A5C66;
+      --thm-rot: #9C132E;
+      --thm-gelb: #F4AA00;
+      --thm-hellblau: #00B8E4;
+      --thm-blau: #002878;
+      --weiss: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--weiss);
+      color: var(--thm-grau);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 0.25rem solid var(--thm-gruen);
+      color: var(--thm-grau);
+      font-size: 2rem;
+    }
+
+    p {
+      max-width: 44rem;
+    }
+
+    a {
+      color: var(--thm-rot);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      text-decoration-thickness: 3px;
+    }
+
+    .hinweis {
+      border-left: 0.25rem solid var(--thm-gelb);
+      padding-left: 0.75rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.6rem 1.2rem;
+      border: 0.2rem solid var(--thm-gruen);
+      border-radius: 0.25rem;
+      background: var(--weiss);
+      color: var(--thm-blau);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      border-color: var(--thm-blau);
+      background: var(--thm-blau);
+      color: var(--weiss);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid var(--thm-gruen);
+      outline-offset: 3px;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 1rem;
+      border-collapse: collapse;
+    }
+
+    caption {
+      padding-bottom: 0.5rem;
+      color: var(--thm-grau);
+      font-weight: 700;
+      text-align: left;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--thm-grau);
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    thead th {
+      background: var(--thm-grau);
+      color: var(--weiss);
+    }
+
+    code {
+      color: var(--thm-blau);
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    .swatch {
+      display: inline-block;
+      width: 1.25rem;
+      height: 1.25rem;
+      border: 1px solid var(--thm-grau);
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Farbprobe – Corporate Design der THM</h1>
+
+    <p>
+      Diese Seite zeigt die festgelegten Farben der Technischen Hochschule
+      Mittelhessen. Alle Farben sind zentral als CSS-Variablen definiert und
+      werden ausschließlich über diese Variablen verwendet. Weitere
+      Informationen gibt es auf der
+      <a href="https://www.thm.de/">Website der THM</a>.
+    </p>
+
+    <p class="hinweis">
+      Grüner Text auf weißem Hintergrund ist unzulässig. Grün wird daher nur
+      für Akzente, Unterstreichungen und die Schaltfläche eingesetzt.
+    </p>
+
+    <button class="button" type="button">Schaltfläche</button>
+
+    <table>
+      <caption>Farbpalette der THM</caption>
+      <thead>
+        <tr>
+          <th scope="col">Farbe</th>
+          <th scope="col">Hex-Wert</th>
+          <th scope="col">Rolle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="swatch" style="background: var(--thm-gruen);"></span> THM Grün</td>
+          <td><code>#80BA24</code></td>
+          <td>Hauptfarbe, Akzente</td>
+        </tr>
+        <tr>
+          <td><span class="swatch" style="background: var(--thm-grau);"></span> THM Grau</td>
+          <td><code>#4A5C66</code></td>
+          <td>Hauptfarbe, Text</td>
+        </tr>
+        <tr>
+          <td><span class="swatch" style="background: var(--thm-rot);"></span> THM Rot</td>
+          <td><code>#9C132E</code></td>
+          <td>Sekundärfarbe, Links</td>
+        </tr>
+        <tr>
+          <td><span class="swatch" style="background: var(--thm-gelb);"></span> THM Gelb</td>
+          <td><code>#F4AA00</code></td>
+          <td>Sekundärfarbe, Hinweise</td>
+        </tr>
+        <tr>
+          <td><span class="swatch" style="background: var(--thm-hellblau);"></span> THM Hellblau</td>
+          <td><code>#00B8E4</code></td>
+          <td>Sekundärfarbe</td>
+        </tr>
+        <tr>
+          <td><span class="swatch" style="background: var(--thm-blau);"></span> THM Blau</td>
+          <td><code>#002878</code></td>
+          <td>Sekundärfarbe, Schrift</td>
+        </tr>
+        <tr>
+          <td><span class="swatch" style="background: var(--weiss);"></span> Weiß</td>
+          <td><code>#FFFFFF</code></td>
+          <td>Hintergrundfarbe</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
