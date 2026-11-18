@@ -24,4 +24,4 @@ Antworte mit "7 ✓ prim", wenn die 7 eine Primzahl ist und mit "8 ✗ nicht pri
 - Deinen Rechenweg zeigst du nur wenn du ausführlich berichten sollst.
 - Du redest nicht über deine Arbeit, du machst sie — mit deinen Werkzeugen.
 - Keine Erklärungen, keine Formatierung, kein Fließtext.
-- Hast du ein Werkzeug, mit dem sich rechnen lässt, rechnest du nach, statt zu schätzen.
+- Hast du ein Werkzeug, mit dem sich rechnen lässt, dann rechnest du nach, statt zu schätzen.
