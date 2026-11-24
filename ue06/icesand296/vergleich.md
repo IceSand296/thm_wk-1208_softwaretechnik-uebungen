@@ -25,25 +25,21 @@ Beide Zeilen hatten Inhalte die erfunden wurden.
 
 ## Aufgabe 3 — Klassendiagramm
 
-<!-- Schritte 4 und 7: Zahl der Verstöße je Art, ohne und mit Ihren
-     Regeln. -->
-
 | Verstoß | ohne Regeln | mit Regeln |
 |---|---|---|
-| künstliche Schlüssel | … | … |
-| technische statt fachlicher Datentypen | … | … |
-| Erfundenes (Attribute, Klassen, Operationen) | … | … |
-| fehlende oder abweichende Multiplizitäten | … | … |
-| Assoziation statt Komposition | … | … |
+| künstliche Schlüssel | 0 | 0 |
+| technische statt fachlicher Datentypen | 4 | 0 |
+| Erfundenes (Attribute, Klassen, Operationen) | 0 | 0 |
+| fehlende oder abweichende Multiplizitäten | 0 | 0 |
+| Assoziation statt Komposition | 0 | 0 |
 
-**Was die Regeln behoben haben und was nicht:** …
+**Was die Regeln behoben haben und was nicht:** War danach alles Inordnung, der Agent hat die Makierungen für die Vererbung von alleine entfernt, diese habe ich wieder hinzufügen lassen.
 
 ### Meine Regeln für Datenmodelle
 
-<!-- Schritt 5: knapp und eindeutig, als Liste. Der Agent liest diesen
-     Abschnitt in Schritt 6. -->
-
-- …
+- Benutze keine technischen Typen, verwende fachliche Datentypen(wie Kennung, Uhrzeit, Raum)
+- Erzeuge keine künstlichen Schlüssel die nicht explizit in der Beschreibung gefordert werden.
+- 
 
 ## Aufgabe 4 — Zustandsdiagramm
 
