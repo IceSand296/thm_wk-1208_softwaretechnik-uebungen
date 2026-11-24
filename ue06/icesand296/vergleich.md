@@ -1,10 +1,5 @@
 # Von Hand und mit dem Agenten — Terminplaner für die THM
 
-<!-- Aufgaben 1 bis 4 des Übungsblatts und „Vor der nächsten Vorlesung“.
-     Ersetzen Sie jedes „…“ durch Ihre Angabe und fügen Sie so viele
-     Zeilen hinzu, wie Sie benötigen. Löschen Sie die Kommentare, sobald
-     Sie fertig sind. -->
-
 ## Aufgabe 1 — Use-Case-Diagramm
 
 - Erfundenes: Zeitfenster sperren/freigeben
@@ -42,9 +37,6 @@ Beide Zeilen hatten Inhalte die erfunden wurden.
 
 ## Aufgabe 4 — Zustandsdiagramm
 
-<!-- Schritt 5: jede Abweichung, welche der Agent gemeldet hat, mit Ihrem
-     Urteil (berechtigt / nicht berechtigt) und einem Satz Begründung. -->
-
 | Abweichung laut Agent | Urteil | Begründung |
 |---|---|---|
 | Abweichung bezüglich der Übergänge zu "Gesperrt" | nicht berechtig | Er wiederholt die aufgabenstellung und meine Darstellung, aber nicht was falsch ist. |
@@ -54,21 +46,32 @@ Beide Zeilen hatten Inhalte die erfunden wurden.
 
 ## Ein System, vier Sichten
 
-<!-- Vor der nächsten Vorlesung. -->
 
 ### Was kommt mehrfach vor?
 
 | Element | Use-Case | Aktivität | Klassen | Zustand |
 |---|---|---|---|---|
-| … | … | … | … | … |
+| Zeitfenster | Use-Cases | Aktion | Klasse | Betrachtetes Objekt |
+| Sprechstunde | Use-Cases | Aktion | Klasse | Transition |
+| Buchung | Use-Cases | Aktion | Klasse | Zustand, Transition |
+| Lehrende | Akteur  | Aktion | Klasse | Transitionen |
+| Studierende / Studentin | Akteur | Swimlane | Klasse | — |
+| Sekretariat | Akteur | — | Klasse | — |
+| Hochschulkonto / Anmeldung | Use-Case | Entscheidung, Aktion | Attribut | — |
+| Anliegen | — | Aktion | Attribut | — |
+| iCal-Datei | Use-Case | Aktion | — | — |
+| Stornieren / Absagen | Use-Cases | — | — | Transitionen |
+| Beginn (Zeitpunkt) | — | — | Attribut | Bedingungen |
 
 <!-- Je Zelle: unter welchem Namen und in welcher Form das Element dort
      vorkommt (Akteur, Use-Case, Aktion, Klasse, Zustand …), oder „—“. -->
 
 ### Wo passt es nicht zusammen?
 
-- …
+- Use-Case vs. Aktivität: Warteliste fehlt im Aktivitätsdiagramm; Login dort optional (Bereits angemeldet?), im Use-Case `<<include>>`.
+- Zustand vs. Aktivität/Text: Übergänge/Zustände teils fehlerhaft bzw. fehlend (Frei nach Storno/Sperrung, Abgesagt); als gebucht vermerken im Aktivitätsdiagramm parallel statt als Zustand.
+- Zustand vs. Klasse: Zustände fehlen als Attribut/Klasse; Beginn hängt im Klassendiagramm an Sprechstunde, wird im Zustandsdiagramm pro Zeitfenster geprüft.
 
 ### Aus „Zeitfenster“ wird „Termin“
 
-**Stellen:** … in … Dateien
+**Stellen:** 14 in 4 Dateien
