@@ -1,0 +1,35 @@
+@startuml
+skinparam defaultTextAlignment center
+
+|Studentin|
+start
+:Sprechstunde auswählen;
+if (Bereits am Hochschulkonto angemeldet?) then (nein)
+  :Anmelden mit Hochschulkonto;
+else (ja)
+endif
+
+|Terminplaner|
+:Freie Zeitfenster der\nSprechstunde anzeigen;
+
+|Studentin|
+:Zeitfenster auswählen\nund Anliegen eintragen;
+
+|Terminplaner|
+if (Zeitfenster noch frei?) then (nein)
+  :Freie Zeitfenster\nerneut anzeigen;
+  detach
+else (ja)
+  :Buchung eintragen;
+  fork
+    :Bestätigung mit\niCal-Datei an\nStudentin schicken;
+  fork again
+    :Lehrperson\nbenachrichtigen;
+  fork again
+    :Zeitfenster als\ngebucht vermerken;
+  end fork
+  :Buchung abgeschlossen;
+  stop
+endif
+
+@enduml

@@ -5,7 +5,7 @@
      Zeilen hinzu, wie Sie benötigen. Löschen Sie die Kommentare, sobald
      Sie fertig sind. -->
 
-## Aufgabe 1 — Use-Case-Diagramm#
+## Aufgabe 1 — Use-Case-Diagramm
 
 - Erfundenes: Zeitfenster sperren/freigeben
 - Ich habe "Anmeldung prüfen" includes "Hochschulkonto einloggen", dass von Rechenzentrum ist
@@ -16,14 +16,10 @@
 "lehrer -- uc_sperren" gelöscht in Zeile 32
 Beide Zeilen hatten Inhalte die erfunden wurden.
 
-<!-- Schritt 6: was Sie selbst im Text geändert haben und warum. -->
-
 ## Aufgabe 2 — Aktivitätsdiagramm
 
-<!-- Schritt 4: Was stimmte am Diagramm des Agenten nicht, und was haben
-     Sie verbessert? -->
-
-- …
+- bei mir fehlt "Zeitfenster auswählen und Anliegen eintragen"
+- Loop für "Freie Zeitfenster anzeigen" fehlt
 
 **Die Änderung um die Warteliste:** …
 
