@@ -1,0 +1,43 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Lehrende" as lehrer
+actor "Studierende" as student
+actor "Sekretariat" as sekretariat
+actor "Anmeldedienst\n(Rechenzentrum)" as anmeldedienst
+
+rectangle "Terminplaner" {
+    usecase "Sprechstunde anlegen" as uc_anlegen
+    usecase "Sprechstunde absagen" as uc_absagen
+    
+    usecase "Zeitfenster buchen" as uc_buchen
+    usecase "Buchung stornieren" as uc_stornieren
+    usecase "Auf Warteliste setzen" as uc_warteliste
+    usecase "iCal-Datei herunterladen" as uc_ical
+    usecase "Am Hochschulkonto anmelden" as uc_anmelden
+    
+    ' Include / Extend relationships
+    uc_buchen ..> uc_anmelden : <<include>>
+    uc_stornieren ..> uc_anmelden : <<include>>
+    uc_anlegen ..> uc_anmelden : <<include>>
+    uc_absagen ..> uc_anmelden : <<include>>
+    
+    uc_warteliste .> uc_buchen : <<extend>>
+    uc_ical .> uc_buchen : <<extend>>
+}
+
+lehrer -- uc_anlegen
+lehrer -- uc_absagen
+
+
+student -- uc_buchen
+student -- uc_stornieren
+student -- uc_warteliste
+student -- uc_ical
+
+sekretariat -- uc_anlegen
+
+uc_anmelden -- anmeldedienst
+
+@enduml
