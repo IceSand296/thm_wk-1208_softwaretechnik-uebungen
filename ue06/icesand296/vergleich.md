@@ -21,10 +21,7 @@ Beide Zeilen hatten Inhalte die erfunden wurden.
 - bei mir fehlt "Zeitfenster auswählen und Anliegen eintragen"
 - Loop für "Freie Zeitfenster anzeigen" fehlt
 
-**Die Änderung um die Warteliste:** …
-
-<!-- Schritt 7: Hat der Agent nur ergänzt, was verlangt war? Ist die neue
-     Verzweigung richtig eingefügt? -->
+**Die Änderung um die Warteliste:** Ja nur gewünschte Warteschlange. Ja die Verzweigung ist korrekt eingefügt. Ja sie endet in einem Endpunkt.
 
 ## Aufgabe 3 — Klassendiagramm
 

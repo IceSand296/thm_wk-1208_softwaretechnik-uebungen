@@ -17,8 +17,22 @@ endif
 
 |Terminplaner|
 if (Zeitfenster noch frei?) then (nein)
-  :Freie Zeitfenster\nerneut anzeigen;
-  detach
+  if (Kein Zeitfenster mehr frei?) then (ja)
+    |Terminplaner|
+    :Warteliste anbieten;
+    |Studentin|
+    if (Warteliste annehmen?) then (ja)
+      |Terminplaner|
+      :Auf die Warteliste setzen;
+      stop
+    else (nein)
+      stop
+    endif
+  else (nein)
+    |Terminplaner|
+    :Freie Zeitfenster\nerneut anzeigen;
+    detach
+  endif
 else (ja)
   :Buchung eintragen;
   fork
