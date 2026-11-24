@@ -39,7 +39,6 @@ Beide Zeilen hatten Inhalte die erfunden wurden.
 
 - Benutze keine technischen Typen, verwende fachliche Datentypen(wie Kennung, Uhrzeit, Raum)
 - Erzeuge keine künstlichen Schlüssel die nicht explizit in der Beschreibung gefordert werden.
-- 
 
 ## Aufgabe 4 — Zustandsdiagramm
 
@@ -48,7 +47,10 @@ Beide Zeilen hatten Inhalte die erfunden wurden.
 
 | Abweichung laut Agent | Urteil | Begründung |
 |---|---|---|
-| … | … | … |
+| Abweichung bezüglich der Übergänge zu "Gesperrt" | nicht berechtig | Er wiederholt die aufgabenstellung und meine Darstellung, aber nicht was falsch ist. |
+| Abweichung bei Endzuständen ([*]) und UML-Notation | nicht berechtig | Er sagt einfach nur, dass von den 3 Endzuständen ein Kreis mit Punkt sind und das die Notation Sate -->[*] auch von Mermaid unterstützt wird, alles so wie es ist. |
+| Fehlender Übergang bzw. Einschränkung bei Stornierung | berechtig | Ich habe "(nur bis 2 Stunden vor Beginn möglich)" geschrieben, als Notiz geschrieben und nicht als Guard |
+| Fehlende Übergänge für das Erreichen des Beginns aus dem Zustand "Gebucht" | berechtig | Detail-Anforderung an fehlende Guard-Bedingung 
 
 ## Ein System, vier Sichten
 
